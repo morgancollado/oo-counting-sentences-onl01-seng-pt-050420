@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    count_sentences = self.split("?", "!").flatten
+    count_sentences = self.split((/[.?!] /)).flatten
     count_sentences.count
   end
 end
